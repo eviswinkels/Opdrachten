@@ -1,0 +1,46 @@
+<style>
+    div{
+        border: 2px solid #89923575;
+        border-radius: 12px;
+        display: inline-block;
+        padding:7px;
+        padding-top:14px;
+        margin:20px;
+
+    }
+</style>
+<script>
+    function start(){
+        var deDOM = document.getElementsByTagName("html");
+        console.log(deDOM);
+        //console.log("yes");
+        //document.getElementById("goedkeuring").innerHTML = "yes";
+        let leeftijd = document.getElementById("magdrinken").value;
+        document.getElementById("magdrinken").hidden = false;
+        //console.log(leeftijd);
+        if( leeftijd < 16){
+        //    console.log("mag niet drinken");
+            document.getElementById("goedkeuring").innerHTML = "mag niet drinken";
+            document.getElementById("goedkeuring").style.backgroundColor = "red";
+            //window.location = "http://nos.nl";
+            document.getElementById("goedkeuring").hidden = true;
+        }else{
+            document.getElementById("goedkeuring").innerHTML = "mag wel drinken";
+            document.getElementById("goedkeuring").style.backgroundColor = "green";
+//            document.getElementById("goedkeuring").style.
+
+        }
+        document.getElementById("plaatje").src = "kruis.png";
+        
+    }
+</script>
+<a href="http://nos.nl" target="_blank">ga naar nieuws</a>
+<br>
+<a href="beginnen.html">andere van mijn pagina</a>
+<img src="check.png" width="120px" id="plaatje">
+<textarea id="magdrinken" hidden></textarea>
+<hr>
+<button  onclick="start()">klik hier</button>
+<div id="goedkeuring" hidden>  </div>
+
+// hide elementen
