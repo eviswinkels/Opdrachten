@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function start(){
+        var week_dag = document.getElementById("invoer").value;
+        console.log(week_dag);
+        if (week_dag == "maandag" | "dinsdag"){
+            document.getElementById("antwoord").innerHTML = "Dit is een kantoordag.";
+        }
+        if (week_dag == "woensdag"){
+            document.getElementById("antwoord").innerHTML = "Dit is een zelfstudiedag.";
+        }
+        if (week_dag == "donderdag" | "vrijdag"){
+            document.getElementById("antwoord").innerHTML = "Dit is een remote dag.";
+        }
+    }
+
+
+
+</script>
+<body>
+    <input id = "invoer"> <button onclick="start()"> Klik hier</button>
+    <div id = "antwoord"> Antwoord: </div>
+</body>
+
+</html>

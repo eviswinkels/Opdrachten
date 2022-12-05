@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        function start(){  // eventlistener
+            //array
+            //casten of conveteren
+            console.log("beginnen");
+                    // operator
+                // operand // operand    
+            let naam = document.getElementById("voornaam").value;
+            console.log(naam);
+            // if statement
+            document.getElementById("resultaat").innerHTML = "Welkom "+naam;
+            if(   naam == "felix"   ){  // boolean   double float
+                console.log("dit wil ik alleen doen als het waar is")
+            }
+            for(var x = 0 ; x <= 10 ; x = x+2 ){
+                    document.getElementById("resultaat").innerHTML += "<hr>"+x;
+            }
+            var lijstje = [5, 23, 77, 99, 17]; 
+            for(var y = 0; y<lijstje.length; y++){
+            console.log(lijstje[y]);
+            }
+            console.log(naam[3])
+            getal = parseInt(naam);
+        }
+    </script>
+</head>
+<body>
+    <input id="voornaam"><button onclick="start()">Klik hier</button>
+    <div id="resultaat">antwoord</div>
+</body>
+</html>

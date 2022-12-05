@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var uitkomst = document.getElementById("resultaat");
+    var uitkomst = String(uitkomst);
+    var checked_a = false
+    var checked_b = false
+    var checked_c = false
+    var checked_d = false
+
+    function optie_a(){
+        if (checked_a== false) {
+            document.getElementById("resultaat").innerHTML += "U hebt op A gedrukt. "
+            checked_a = true;
+        }
+        else {
+            alert("knop A is al een keer ingedrukt")
+            document.getElementById("resultaat").innerHTML += "U hebt op A gedrukt. ";
+        }
+          
+    }
+    function optie_b(){
+        if (checked_b == false) {
+            document.getElementById("resultaat").innerHTML += "U hebt op B gedrukt. "
+            checked_b = true;
+        }
+        else {
+            alert("knop B is al een keer ingedrukt")
+            document.getElementById("resultaat").innerHTML += "U hebt op B gedrukt. ";
+        }
+        
+    }
+    function optie_c(){
+        if (checked_c == false) {
+            document.getElementById("resultaat").innerHTML += "U hebt op C gedrukt. "
+            checked_c = true;
+        }
+        else {
+            alert("knop C is al een keer ingedrukt")
+            document.getElementById("resultaat").innerHTML += "U hebt op C gedrukt. ";
+        }
+    }
+    function optie_d(){
+        if (checked_d == false) {
+            document.getElementById("resultaat").innerHTML += "U hebt op D gedrukt. "
+            checked_d = true;
+        }
+        else {
+            alert("knop D is al een keer ingedrukt")
+            document.getElementById("resultaat").innerHTML += "U hebt op D gedrukt. ";
+        }
+    }
+
+</script>
+<body>
+   <button id = "a" onclick="optie_a()"> A </button>
+   <button id = "b" onclick="optie_b()"> B </button>
+   <button id = "c" onclick="optie_c()"> C </button>
+   <button id = "d" onclick="optie_d()"> D </button>
+   <div id = "resultaat"> Antwoord: </div>
+</body>
+</html>
